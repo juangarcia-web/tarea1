@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* barra de navegacion */
+
+header {
+    width: 100%;
+    background-color:#5e9ace;
+}
+
+#btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    border-right: 1px solid #fff;
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav li:hover {
+    background: rgba(0,0,0,0.3); 
+}
+
+.main-nav ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-nav a {
+    color: hsl(201, 27%, 85%);
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+h2 {
+    font-family: 'Train One', cursive;
+    padding-top: 20px;
+}
+
+p {
+    margin-top: 10px;
+    padding-top: 15px;
+}
+/* responsive menu */
+@media (max-width:768px) {
+    header label {
+        display: block;
+    }
+
+    .main-nav {
+        position: absolute;
+        background: #4e94ab;
+        width: 40%;
+        margin-left: -40%;
+        transition: all 0.5s;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+    }
+
+    .main-nav li {
+        border-top: 1px solid #fff;
+    }
+
+    #btn-menu:checked ~ .main-nav {
+        margin: 0;
+    }
+
+    img {
+        max-width: 300px;
+    }
+
+    /* .container {
+        display: flex;
+    }
+     */
+
+}
+
+@media (min-width:768px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-8 {
+        width: 75%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+    img {
+        max-width: 370px;
+    }
+}
+
+@media (min-width:880px) {
+    img {
+        max-width: 430px;
+    }
+
+    .col-md-4 {
+        width: 25%;
+    }
+
+    .container {
+        display: flex;
+    }
+    
+    
+}
+
+
+/* buttons */
+.btn {
+    border: 0;
+    padding: 8px 20px;
+}
+.btn-primary {
+    background-color: #293DCB;
+    color: white;
+}
+
+/* layouts */
+
+.container {
+    width: 100%;
+    margin: 0px;
+    padding-top: 15px;
+    /* display: flex; */
+}
+
+
+/* ================================ Index/home ================================== */
+/* ================================ Intro ================================== */
+
+.intro-greeting {
+    font-size: 1.2rem;
+}
+
+.display-flex {
+    display: flex;
+}
+.align-items-center {
+    align-items: center;
+
+}
+.font-weight-500 {
+    font-weight: 500;
+}
+.space-top {
+    margin-top: 10px;
+}
+.margin-0 {
+    margin: 0!important;
+}
